@@ -64,6 +64,9 @@ world-settings:
   world_nether:
     view-distance: 6
     simulation-distance: 6
+  world_the_end:
+    view-distance: 4
+    simulation-distance: 4
   default:
     below-zero-generation-in-existing-chunks: true
     arrow-despawn-rate: 1200
