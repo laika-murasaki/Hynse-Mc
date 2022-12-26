@@ -85,7 +85,7 @@ world-settings:
             nameplate:
                 enabled: true
                 show-head: true
-                heads-url: https://mc-heads.net/avatar/{uuid}/16
+                heads-url: https://api.creepernation.net/head/{uuid}
                 show-armor: true
                 show-health: true
             hide:
