@@ -1,5 +1,5 @@
 # What the villager needs to be named to be disabled.
-NameThatDisables: 'Optimize'
+NameThatDisables: 'noai'
 
 # This needs to be a valid block ID to work.
 BlockThatDisables: 'EMERALD_BLOCK'
@@ -27,7 +27,7 @@ toggleableoptions:
   userenaming: true
 
   # This will allow a block to disable and renable the Villager AI.
-  useblocks: false
+  useblocks: true
 
 messages:
   no-permission: "&cYou don't have permission to use this command."

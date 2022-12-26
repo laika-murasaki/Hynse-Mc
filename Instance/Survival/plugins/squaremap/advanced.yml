@@ -1,59 +1,45 @@
 config-version: 1
 settings:
     event-listeners:
-        BlockPlaceEvent: true
-        StructureGrowEvent: true
-        LeavesDecayEvent: true
-        ChunkPopulateEvent: true
-        EntityChangeBlockEvent: true
-        BlockGrowEvent: true
-        BlockExplodeEvent: true
-        BlockFormEvent: true
-        BlockBurnEvent: true
-        BlockFadeEvent: true
-        BlockSpreadEvent: true
-        EntityBlockFormEvent: true
-        BlockBreakEvent: true
-        EntityExplodeEvent: true
         FluidLevelChangeEvent: true
-        ChunkLoadEvent: false
-        BlockFromToEvent: false
+        StructureGrowEvent: true
+        BlockGrowEvent: true
+        EntityBlockFormEvent: true
+        BlockPlaceEvent: true
+        BlockFormEvent: true
+        EntityExplodeEvent: true
+        LeavesDecayEvent: true
+        BlockBreakEvent: true
+        BlockExplodeEvent: true
+        EntityChangeBlockEvent: true
+        BlockFadeEvent: true
+        BlockBurnEvent: true
+        BlockSpreadEvent: true
+        ChunkPopulateEvent: true
         BlockPhysicsEvent: false
-        BlockPistonExtendEvent: false
-        BlockPistonRetractEvent: false
-        PlayerQuitEvent: false
-        PlayerJoinEvent: false
         PlayerMoveEvent: false
+        BlockPistonExtendEvent: false
+        PlayerQuitEvent: false
+        ChunkLoadEvent: false
+        BlockPistonRetractEvent: false
+        BlockFromToEvent: false
+        PlayerJoinEvent: false
 world-settings:
     default:
-        invisible-blocks:
-        - minecraft:tall_grass
-        - minecraft:fern
-        - minecraft:grass
-        - minecraft:large_fern
-        iterate-up-base-blocks:
-        - minecraft:netherrack
-        - minecraft:glowstone
-        - minecraft:soul_sand
-        - minecraft:soul_soil
-        - minecraft:gravel
-        - minecraft:warped_nylium
-        - minecraft:crimson_nylium
-        - minecraft:nether_gold_ore
-        - minecraft:ancient_debris
-        - minecraft:nether_quartz_ore
-        - minecraft:magma_block
-        - minecraft:basalt
         color-overrides:
             biomes:
-                water: {}
                 foliage:
                     minecraft:sparse_jungle: '#1f8907'
                     minecraft:dark_forest: '#1c7b07'
                     minecraft:jungle: '#1f8907'
                     minecraft:bamboo_jungle: '#1f8907'
                 grass: {}
+                water: {}
             blocks:
+                minecraft:attached_pumpkin_stem: '#E0C71C'
+                minecraft:terracotta: '#9E6246'
+                minecraft:pink_tulip: '#EBC5FD'
+                minecraft:attached_melon_stem: '#E0C71C'
                 minecraft:glass: '#FFFFFF'
                 minecraft:dandelion: '#FFEC4F'
                 minecraft:oxeye_daisy: '#D6E8E8'
@@ -76,7 +62,21 @@ world-settings:
                 minecraft:peony: '#EBC5FD'
                 minecraft:birch_leaves: '#80A755'
                 minecraft:orange_tulip: '#BD6A22'
-                minecraft:attached_pumpkin_stem: '#E0C71C'
-                minecraft:terracotta: '#9E6246'
-                minecraft:pink_tulip: '#EBC5FD'
-                minecraft:attached_melon_stem: '#E0C71C'
+        iterate-up-base-blocks:
+        - minecraft:netherrack
+        - minecraft:glowstone
+        - minecraft:soul_sand
+        - minecraft:soul_soil
+        - minecraft:gravel
+        - minecraft:warped_nylium
+        - minecraft:crimson_nylium
+        - minecraft:nether_gold_ore
+        - minecraft:ancient_debris
+        - minecraft:nether_quartz_ore
+        - minecraft:magma_block
+        - minecraft:basalt
+        invisible-blocks:
+        - minecraft:tall_grass
+        - minecraft:fern
+        - minecraft:grass
+        - minecraft:large_fern
