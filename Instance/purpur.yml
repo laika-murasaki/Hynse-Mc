@@ -30,7 +30,7 @@ settings:
     death-message:
       run-with-scissors: <player> slipped and fell on their shears
       stonecutter: <player> has sawed themself in half
-  use-alternate-keepalive: false
+  use-alternate-keepalive: true
   disable-give-dropping: false
   username-valid-characters: ^[a-zA-Z0-9_.]*$
   blocks:
