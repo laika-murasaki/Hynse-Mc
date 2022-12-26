@@ -127,3 +127,8 @@ Instance/world/datapacks/bukkit/pack.mcmeta
 Instance/permissions.yml
 *.lock
 *.dat
+*.console_history
+Instance/crash-reports
+Instance/plugins/spark
+*.dat_old
+*.mca

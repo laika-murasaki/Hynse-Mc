@@ -1160,7 +1160,7 @@ world-settings:
           check-interval: 100
         display-trade-item: true
         spawn-iron-golem:
-          radius: 0
+          radius: 5
           limit: 0
       turtle:
         ridable: false
