@@ -402,19 +402,46 @@ TabCompletion:
 # You can also use the CustomPlaceholderCreator tool by double-clicking the plugin jar
 CustomPlaceholders:
   '1':
+    # Should the placeholders be parsed as the message sender or the message receiver
+    # Either 'sender' or 'viewer'
     ParsePlayer: sender
+    # The keyword to look for in the chat (in regex)
     Keyword: (?i)\[pos\]
+    # Whether to parse placeholders in the keyword text
     ParseKeyword: false
+    # Cooldown of this placeholder in seconds
     Cooldown: 0
+    # Hover message settings
     Hover:
+      # Add a hover message
       Enable: false
+      # Text for the hover message
+      # Supports multiple lines
       Text: []
+    # Click action settings
     Click:
+      # Add a click action
       Enable: false
+      # The action to do when clicked
+      # List of actions:
+      # OPEN_URL
+      # OPEN_FILE
+      # RUN_COMMAND
+      # SUGGEST_COMMAND
+      # CHANGE_PAGE
+      # COPY_TO_CLIPBOARD
       Action: ''
+      # The value for the action above
+      # for example '/say yellow is her fav color' for the action RUN_COMMAND
       Value: ''
+    # Replace keyword settings
     Replace:
+      # Whether the keyword should be replaced with another text
       Enable: true
+      # The text to replace the keyword
       ReplaceText: '&bWorld: &f%player_world% &eX:&f%player_x% &eY:&f%player_y% &eZ:&f%player_z%'
+    # This name is used to identify your placeholder
+    # It must be a non-regex form of your keyword and should satisfy the regex of your keyword
     Name: '[pos]'
+    # This description is used when listing placeholders
     Description: '&eShows your current position!'
