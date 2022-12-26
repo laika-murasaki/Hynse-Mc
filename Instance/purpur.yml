@@ -114,7 +114,7 @@ settings:
       distance: 0.5
     minecraft:orange_bed:
       distance: 0.5
-  server-mod-name: Purpur
+  server-mod-name: Hynse
   tps-catchup: true
   seed:
     structure:
