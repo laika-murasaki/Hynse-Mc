@@ -58,6 +58,9 @@ commands:
 players:
   disable-saving: false
 world-settings:
+  world:
+    view-distance: 8
+    simulation-distance: 8
   default:
     below-zero-generation-in-existing-chunks: true
     arrow-despawn-rate: 1200
