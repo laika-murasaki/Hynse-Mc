@@ -16,7 +16,7 @@ enable-books: true
 # Optimizes projectile settings
 projectile:
   max-loads-per-tick: 10
-  max-loads-per-projectile: 10
+  max-loads-per-projectile: 8
 sentry-dsn: ''
 # Settings for things that don't belong elsewhere
 misc:
@@ -29,6 +29,6 @@ dab:
   enabled: false
   start-distance: 12
   max-tick-freq: 20
-  activation-dist-mod: 8
+  activation-dist-mod: 7
   blacklisted-entities: []
-inactive-goal-selector-throttle: false
+inactive-goal-selector-throttle: true

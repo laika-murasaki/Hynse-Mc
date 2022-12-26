@@ -18,29 +18,27 @@ anticheat:
     enabled: true
     engine-mode: 1
     hidden-blocks:
+    - chest
+    - coal_ore
+    - deepslate_coal_ore
     - copper_ore
     - deepslate_copper_ore
+    - raw_copper_block
+    - diamond_ore
+    - deepslate_diamond_ore
+    - emerald_ore
+    - deepslate_emerald_ore
     - gold_ore
     - deepslate_gold_ore
     - iron_ore
     - deepslate_iron_ore
-    - coal_ore
-    - deepslate_coal_ore
+    - raw_iron_block
     - lapis_ore
     - deepslate_lapis_ore
-    - mossy_cobblestone
-    - obsidian
-    - chest
-    - diamond_ore
-    - deepslate_diamond_ore
     - redstone_ore
     - deepslate_redstone_ore
-    - clay
-    - emerald_ore
-    - deepslate_emerald_ore
-    - ender_chest
-    lava-obscures: false
-    max-block-height: 64
+    lava-obscures: true
+    max-block-height: 128
     replacement-blocks:
     - stone
     - oak_planks
@@ -64,7 +62,7 @@ chunks:
     snowball: 16
   fixed-chunk-inhabited-time: -1
   max-auto-save-chunks-per-tick: 6
-  prevent-moving-into-unloaded-chunks: false
+  prevent-moving-into-unloaded-chunks: true
 collisions:
   allow-player-cramming-damage: false
   allow-vehicle-collisions: true
@@ -73,7 +71,7 @@ collisions:
   only-players-collide: false
 entities:
   armor-stands:
-    do-collision-entity-lookups: true
+    do-collision-entity-lookups: false
     tick: true
   behavior:
     baby-zombie-movement-modifier: 0.5
@@ -135,29 +133,29 @@ entities:
     creative-arrow-despawn-rate: default
     despawn-ranges:
       ambient:
-        hard: 96
-        soft: 28
+        hard: 56
+        soft: 30
       axolotls:
-        hard: 96
-        soft: 28
+        hard: 56
+        soft: 30
       creature:
-        hard: 96
-        soft: 28
+        hard: 56
+        soft: 30
       misc:
-        hard: 96
-        soft: 28
+        hard: 56
+        soft: 30
       monster:
         hard: 128
         soft: 32
       underground_water_creature:
-        hard: 96
-        soft: 28
+        hard: 56
+        soft: 30
       water_ambient:
-        hard: 96
-        soft: 28
+        hard: 56
+        soft: 30
       water_creature:
-        hard: 96
-        soft: 28
+        hard: 56
+        soft: 30
     disable-mob-spawner-spawn-egg-transformation: false
     duplicate-uuid:
       mode: SAFE_REGEN
@@ -205,7 +203,7 @@ environment:
     enabled: true
   generate-flat-bedrock: false
   nether-ceiling-void-damage-height: disabled
-  optimize-explosions: false
+  optimize-explosions: true
   portal-create-radius: 16
   portal-search-radius: 128
   portal-search-vanilla-dimension-scaling: true
@@ -230,7 +228,7 @@ fixes:
   tnt-entity-height-nerf: disabled
 hopper:
   cooldown-when-full: true
-  disable-move-event: false
+  disable-move-event: true
   ignore-occluding-blocks: false
 lootables:
   auto-replenish: false
@@ -257,7 +255,7 @@ misc:
   redstone-implementation: ALTERNATE_CURRENT
   shield-blocking-delay: 5
   show-sign-click-command-failure-msgs-to-player: false
-  update-pathfinding-on-block-update: true
+  update-pathfinding-on-block-update: false
 scoreboards:
   allow-non-player-entities-on-scoreboards: false
   use-vanilla-world-scoreboard-name-coloring: false
@@ -268,12 +266,14 @@ spawn:
 tick-rates:
   behavior:
     villager:
-      validatenearbypoi: -1
-  container-update: 3
-  grass-spread: 2
-  mob-spawner: 1
+      validatenearbypoi: 60
+      acquirepoi: 120
   sensor:
     villager:
-      secondarypoisensor: 40
+      secondarypoisensor: 80
+      nearestbedsensor: 80
+      villagerbabiessensor: 40
+      playersensor: 40
+      nearestlivingentitysensor: 40
 unsupported-settings:
   fix-invulnerable-end-crystal-exploit: true

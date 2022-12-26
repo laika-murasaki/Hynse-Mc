@@ -12,21 +12,21 @@ settings:
   use-map-color-cache: true
 spawn-limits:
   monsters: 30
-  animals: 10
-  water-animals: 5
-  water-ambient: 5
-  water-underground-creature: 5
-  axolotls: 5
+  animals: 5
+  water-animals: 2
+  water-ambient: 2
+  water-underground-creature: 3
+  axolotls: 3
   ambient: 1
 chunk-gc:
   period-in-ticks: 400
 ticks-per:
   animal-spawns: 400
   monster-spawns: 1
-  water-spawns: 1
-  water-ambient-spawns: 1
-  water-underground-creature-spawns: 1
-  axolotl-spawns: 1
-  ambient-spawns: 1
+  water-spawns: 400
+  water-ambient-spawns: 400
+  water-underground-creature-spawns: 400
+  axolotl-spawns: 400
+  ambient-spawns: 400
   autosave: 6000
 aliases: now-in-commands.yml

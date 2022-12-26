@@ -4,3 +4,13 @@
 # World: world_the_end (minecraft:the_end)
 
 _version: 29
+anticheat:
+  anti-xray:
+    enabled: false 
+entities:
+  despawn-ranges:
+    monster:
+      hard: 56
+      soft: 30
+  spawn-limits:
+    monster: 22

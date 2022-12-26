@@ -4,3 +4,19 @@
 # World: world_nether (minecraft:the_nether)
 
 _version: 29
+anticheat:
+  anti-xray:
+    hidden-blocks:
+    - ancient_debris
+    - nether_gold_ore
+    - nether_quartz_ore
+    max-block-height: 128
+entities:
+  despawn-ranges:
+    monster:
+      hard: 56
+      soft: 30
+  spawn-limits:
+    ambient: 1
+    creature: 3
+    monster: 32
