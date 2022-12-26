@@ -125,3 +125,5 @@ Instance/world/session.lock
 Instance/world/uid.dat
 Instance/world/datapacks/bukkit/pack.mcmeta
 Instance/permissions.yml
+*.lock
+*.dat
