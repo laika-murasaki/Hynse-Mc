@@ -1,7 +1,7 @@
 #
 # Used for when AdvancedServerList doesn't have a cached player to use for ${player name}
 #
-unknown_player: "Anonymous"
+unknown_player: "NO CACHE"
 
 #
 # Should the Caching of players be disabled?
@@ -17,4 +17,4 @@ disable_cache: false
 # When set to true will AdvancedServerList check for a new version on modrinth.com every 12 hours and inform you in the
 # console about whether it found any new update or not.
 #
-check_updates: true
+check_updates: false

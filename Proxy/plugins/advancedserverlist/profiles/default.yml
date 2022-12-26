@@ -25,9 +25,8 @@ priority: 0
 #
 motds:
   - |-
-    <grey>Line 1
-    <grey>Line 2
-
+    <#ffcd29>★ <gradient:#d984e8:#ffb5f3><bold>ʜʏɴꜱᴇ</bold> </gradient><#e8e8e8>〉〉</#e8e8e8>  <#ffcfeb>community survival multiplayer</#ffcfeb>
+    <gradient:#e0e0e0:#a8a8a8><font:uniform>NO HACKING / NO TOXIC / NO OPERATOR / NO GRIEFER / DONT BE JERK</font></gradient>
 #
 # Allows you to set a favicon for this server list profile.
 # You can use one of three possible options:
@@ -37,7 +36,7 @@ motds:
 #
 # Read more: https://github.com/Andre601/AdvancedServerList/wiki/Profiles#favicon
 #
-favicon: ''
+favicon: 'https://mc-heads.net/avatar/${player name}/64/nohelm.png'
 
 #
 # Contains various options to manipulate the player count (Text displaying online and max players allowed).
@@ -61,9 +60,7 @@ playerCount:
   # Read more: https://github.com/Andre601/AdvancedServerList/wiki/Profiles#hover
   #
   hover:
-    - '<grey>Line 1'
-    - '<grey>Line 2'
-    - '<grey>Line 3'
+    - ''
   #
   # Modifies the text that usually displays '<online>/<max>'
   # 
