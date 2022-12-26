@@ -65,21 +65,18 @@ yellow-number-in-tablist:
   disable-in-servers:
   - disabledserver
 global-playerlist:
-  enabled: false
-  display-others-as-spectators: false
+  enabled: true
+  display-others-as-spectators: true
   display-vanished-players-as-spectators: true
   isolate-unlisted-servers: false
   update-latency: false
   spy-servers:
-  - spyserver1
-  - spyserver2
+  - survival
+  - test
   server-groups:
     lobbies:
-    - lobby1
-    - lobby2
-    group2:
-    - server1
-    - server2
+    - survival
+    - test
 belowname-objective:
   enabled: false
   number: '%health%'
