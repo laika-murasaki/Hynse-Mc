@@ -47,8 +47,8 @@ anticheat:
     use-permission: false
   obfuscation:
     items:
-      hide-durability: false
-      hide-itemmeta: false
+      hide-durability: true
+      hide-itemmeta: true
       hide-itemmeta-with-visual-effects: false
 chunks:
   auto-save-interval: default
