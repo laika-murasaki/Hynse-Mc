@@ -274,7 +274,7 @@ world-settings:
       furnace:
         use-lava-from-underneath: false
       sand:
-        fix-duping: true
+        fix-duping: false
       shulker_box:
         allow-oversized-stacks: false
       powered-rail:
@@ -288,7 +288,7 @@ world-settings:
       piston:
         block-push-limit: 12
       end_portal:
-        safe-teleporting: true
+        safe-teleporting: false
       powder_snow:
         bypass-mob-griefing: false
       farmland:
@@ -678,7 +678,7 @@ world-settings:
         controllable: true
         attributes:
           max_health: 40.0
-        allow-griefing: true
+        allow-griefing: false
         can-despawn-with-held-block: false
         bypass-mob-griefing: false
         takes-damage-from-water: true
