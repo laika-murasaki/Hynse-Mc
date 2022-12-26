@@ -225,3 +225,5 @@ Instance/Survival/plugins/squaremap-deathspot
 Instance/Survival/plugins/SIR/misc/icons
 Instance/Survival/plugins/ProtocolLib/lastupdate
 *.old
+Instance/Survival/plugins/squaremap/data
+Instance/Survival/plugins/squaremap/data/minecraft_overworld/dirty_chunks.json
