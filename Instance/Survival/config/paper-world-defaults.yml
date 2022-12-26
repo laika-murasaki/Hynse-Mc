@@ -266,14 +266,17 @@ spawn:
 tick-rates:
   behavior:
     villager:
-      validatenearbypoi: 60
       acquirepoi: 120
+      validatenearbypoi: 60
+  container-update: 1
+  grass-spread: 1
+  mob-spawner: 1
   sensor:
     villager:
-      secondarypoisensor: 80
       nearestbedsensor: 80
-      villagerbabiessensor: 40
-      playersensor: 40
       nearestlivingentitysensor: 40
+      playersensor: 40
+      secondarypoisensor: 80
+      villagerbabiessensor: 40
 unsupported-settings:
   fix-invulnerable-end-crystal-exploit: true

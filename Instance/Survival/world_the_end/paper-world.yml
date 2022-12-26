@@ -6,7 +6,7 @@
 _version: 29
 anticheat:
   anti-xray:
-    enabled: false 
+    enabled: false
 entities:
   despawn-ranges:
     monster:

@@ -1,0 +1,22 @@
+filters:
+  # a random number or custom name
+  default:
+    # can be DEFAULT, null or custom
+    permission: DEFAULT
+    # the char that will replace those bad words
+    replace-char: '*'
+    # enable this if you know regex lol
+    is-regex: true
+    cancel-event: false
+    # the regex patterns or words that can be filtered
+    words:
+      - (?i)dumbass|idiot
+      - (?i)f(.)?ck
+      - CANCEL::normal
+  vip:
+    permission: chat.vip
+    replace-char: '*'
+    is-regex: false
+    words:
+      - stupid
+      - dumb
