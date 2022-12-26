@@ -70,6 +70,9 @@ world-settings:
     view-distance: 4
     simulation-distance: 4
     mob-spawn-range: 4
+  merge-radius:
+      item: 3.5
+      exp: 2
   default:
     below-zero-generation-in-existing-chunks: true
     arrow-despawn-rate: 1200
