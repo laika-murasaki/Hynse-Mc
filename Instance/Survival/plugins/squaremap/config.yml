@@ -35,10 +35,10 @@ world-settings:
             markers:
                 world-border:
                     enabled: true
-                    show-controls: true
+                    show-controls: false
                     default-hidden: false
-                    layer-priority: 6
-                    z-index: 3
+                    layer-priority: 10
+                    z-index: 5
                 spawn-icon:
                     enabled: true
                     show-controls: false
@@ -53,7 +53,7 @@ world-settings:
                 max-render-threads: -1
             visibility-limits:
             -   type: world-border
-                enabled: 'false'
+                enabled: 'true'
             enabled: true
             display-name: '{world}'
             order: 0

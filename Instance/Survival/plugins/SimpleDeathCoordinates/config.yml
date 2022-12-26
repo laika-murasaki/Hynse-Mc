@@ -1,6 +1,5 @@
-message: "Death location: %x% %y% %z% in %dimension%" # use %world% for the world name or %dimension% for the dimension name. use § for color codes.
+message: "ตายที่: %x% %y% %z% in %dimension%" # use %world% for the world name or %dimension% for the dimension name. use § for color codes.
 # the names for each dimension
-NORMAL: "the overworld"
-NETHER: "the nether"
-THE_END: "the end"
-CUSTOM: "a custom dimension"
+NORMAL: "โลก"
+NETHER: "นรก"
+THE_END: "ดิเอ็น"

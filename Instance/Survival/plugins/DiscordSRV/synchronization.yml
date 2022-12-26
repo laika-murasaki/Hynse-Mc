@@ -41,6 +41,7 @@ GroupRoleSynchronizationPrimaryGroupOnly: false
 GroupRoleSynchronizationOnLink: true
 GroupRoleSynchronizationCycleTime: 5
 GroupRoleSynchronizationCycleCompletely: true
+
 # Ban synchronization
 # When a player gets banned on the server when they have a linked Discord account you can optionally ban them on the Discord server and vice versa
 #

@@ -4,10 +4,10 @@
 config_version: 3
 default_language: en_US
 # Enable this option if you're using plugin on a Velocity network
-velocity_support: false
+velocity_support: true
 show_dependency_suggestions: true
 
-bstats: true
+bstats: false
 # Leave sounds blank to disable them
 # Ex: command: ""
 sounds:

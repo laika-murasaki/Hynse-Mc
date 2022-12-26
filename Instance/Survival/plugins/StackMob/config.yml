@@ -1,4 +1,4 @@
-# StackMob 5.8.4 Configuration file - by antiPerson and contributors.
+# StackMob 5.8.5 Configuration file - by antiPerson and contributors.
 # If the comments have been removed, you can find a version with comments at https://github.com/Nathat23/StackMob-5/tree/master/src/main/resources
 #
 # Most options can be customised for specific entity types, for details about this, see the end of this file.
@@ -19,7 +19,10 @@ stack:
   interval: 100
   # The area around an entity for which applicable stacks should be found.
   # Format: [(x cord),(y cord),(z cord)]
-  merge-range: [5,5,5]
+  merge-range:
+  - 5
+  - 5
+  - 5
   # Only begin to stack entities when this amount of entities are nearby.
   threshold:
     enabled: true
@@ -47,7 +50,11 @@ stack:
 worlds-blacklist: []
 worlds-blacklist-invert: false
 # Types of entity which should not stack (3) (***)
-types-blacklist: [SHEEP, COW, CHICKEN ,PIG]
+types-blacklist:
+- SHEEP
+- COW
+- CHICKEN
+- PIG
 types-blacklist-invert: true
 # If the entity's spawn reason is listed below, do not stack. (2)
 reason-blacklist: []
@@ -70,7 +77,10 @@ display-name:
   nearby:
     # The range from which the tag should be visible.
     # Format: [(x cord),(y cord),(z cord)]
-    range: [12,6,12]
+    range:
+    - 12
+    - 6
+    - 12
     # How often (in ticks) the tag visibility status of an entity should be updated. (20 ticks = 1 second)
     interval: 50
     # Perform a ray trace, meaning that the tag is only visible if there are no occluding blocks.
@@ -78,6 +88,13 @@ display-name:
     # Use an armor stand (using packets) to display the tag, rather than renaming the entity.
     # This allows the entity to be renamed using name tags
     use-armorstand: true
+    # Use an armor stand (using packets) to display the tag, rather than renaming the entity.
+    # This allows the entity to be renamed using name tags
+    armorstand:
+      enabled: true
+      # Whether the armor stand should be spawned at a fixed offset from the head location.
+      # This is useful when other plugins use packets for entity name tags. If the value is 0.0 then this is disabled.
+      offset: 0.0
   # Don't show the tag if the stack size of this entity if it is equal to or below the value specified.
   threshold: 1
 
@@ -201,23 +218,35 @@ death:
     reason-blacklist-invert: false
     spawn-reason-blacklist: []
     spawn-reason-blacklist-invert: false
-    type-blacklist: [SHEEP, COW, CHICKEN ,PIG]
+    type-blacklist:
+    - SHEEP
+    - COW
+    - CHICKEN
+    - PIG
     type-blacklist-invert: true
   ALL:
     priority: 1
     reason-blacklist: []
     reason-blacklist-invert: false
-    spawn-reason-blacklist: [ ]
+    spawn-reason-blacklist: []
     spawn-reason-blacklist-invert: false
-    type-blacklist: [SHEEP, COW, CHICKEN ,PIG]
+    type-blacklist:
+    - SHEEP
+    - COW
+    - CHICKEN
+    - PIG
     type-blacklist-invert: false
   STEP:
     priority: 1
     reason-blacklist: []
     reason-blacklist-invert: false
-    spawn-reason-blacklist: [ ]
+    spawn-reason-blacklist: []
     spawn-reason-blacklist-invert: false
-    type-blacklist: [SHEEP, COW, CHICKEN ,PIG]
+    type-blacklist:
+    - SHEEP
+    - COW
+    - CHICKEN
+    - PIG
     type-blacklist-invert: false
     max-step: 5
     min-step: 1
@@ -226,9 +255,13 @@ death:
     priority: 1
     reason-blacklist: []
     reason-blacklist-invert: false
-    spawn-reason-blacklist: [ ]
+    spawn-reason-blacklist: []
     spawn-reason-blacklist-invert: false
-    type-blacklist: [SHEEP, COW, CHICKEN ,PIG]
+    type-blacklist:
+    - SHEEP
+    - COW
+    - CHICKEN
+    - PIG
     type-blacklist-invert: false
 
 # Multiply entity drops on entity death.
@@ -245,7 +278,11 @@ drops:
   reason-blacklist: []
   reason-blacklist-invert: false
   # Types of entity for which drops should not be dropped for. (3) (***)
-  type-blacklist: [SHEEP, COW, CHICKEN ,PIG]
+  type-blacklist:
+  - SHEEP
+  - COW
+  - CHICKEN
+  - PIG
   type-blacklist-invert: true
 
 # Multiply entity experience on entity death.
@@ -282,7 +319,7 @@ hooks:
     stack: false
     # Blacklist of MythicMob types (uses the internal name)
     # This blacklist does not take effect if the prevent-stack option is enabled below.
-    stack-blacklist: [ ]
+    stack-blacklist: []
     stack-blacklist-invert: false
     # When this option is enabled, MythicMobs will not stack.
     prevent-stack: true
@@ -299,9 +336,9 @@ hooks:
   # Make it so that MyPet pets do not stack.
   mypet: true
 
-## Some options can be modified for specific entity types. An example is shown below. Remove comments to see this in action.
-## Options and sections with a (*) in the comment preceding cannot be overridden.
-#custom:
+# # Some options can be modified for specific entity types. An example is shown below. Remove comments to see this in action.
+# # Options and sections with a (*) in the comment preceding cannot be overridden.
+# custom:
 #  # The entity type
 #  CREEPER:
 #    # The option to override. This should be the same as it appears above.

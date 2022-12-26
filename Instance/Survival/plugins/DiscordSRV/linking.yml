@@ -1,4 +1,4 @@
-Require linked account to play:
+Require linked account to play: 
   Enabled: true
 
   # If you don't know what these mean, don't touch them
@@ -55,3 +55,8 @@ Require linked account to play:
     Failed to find subscriber role: "&cFailed to find any subscriber role on Discord.\n\nContact your server admins about this issue."
     Failed for unknown reason: "&cเกิดข้อผิดพลาดขณะพยายามยืนยันบัญชีของคุณ\n\nติดต่อผู้ดูแลระบบเซิร์ฟเวอร์ของคุณเกี่ยวกับปัญหานี้"
     Kicked for unlinking: "&cคุณถูกไล่ออกจากเซิร์ฟเวอร์เนื่องจากยกเลิกการเชื่อมโยงบัญชีของคุณ\n\nโปรดเข้าร่วมเซิร์ฟเวอร์อีกครั้งเพื่อเชื่อมโยงบัญชีของคุณอีกครั้ง"
+
+
+
+
+
