@@ -1,0 +1,20 @@
+{
+  "type": "",
+  "title": "New Punish",
+  "description": "`%player%` banned by `%operator%`.\nEnd: <t:%end%:f>",
+  "color": 5540790,
+  "footer": {
+    "icon_url": "https://i.imgur.com/JhEluGV.png",
+    "text": "PunishManager"
+  },
+  "fields": [
+    {
+      "name": "Reason",
+      "value": "`%reason%`"
+    },
+    {
+      "name": "Duration",
+      "value": "`%duration%`"
+    }
+  ]
+}
