@@ -111,3 +111,17 @@ Proxy/plugins/Geyser-Velocity/locales/en_us.hash
 Proxy/plugins/Geyser-Velocity/locales/en_us.json
 Proxy/plugins/floodgate/key.pem
 Instance/eula.txt
+Instance/banned-players.json
+Instance/banned-ips.json
+Instance/usercache.json
+Instance/version_history.json
+Instance/whitelist.json
+Instance/ops.json
+Instance/help.yml
+Instance/commands.yml
+Instance/config/paper-global.yml
+Instance/plugins/bStats/config.yml
+Instance/world/session.lock
+Instance/world/uid.dat
+Instance/world/datapacks/bukkit/pack.mcmeta
+Instance/permissions.yml
