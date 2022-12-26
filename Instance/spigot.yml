@@ -27,8 +27,8 @@ settings:
       max: 2048.0
     attackDamage:
       max: 2048.0
-  log-villager-deaths: true
-  log-named-deaths: true
+  log-villager-deaths: false
+  log-named-deaths: false
   save-user-cache-on-stop-only: false
   moved-wrongly-threshold: 0.0625
   moved-too-quickly-multiplier: 10.0
@@ -66,7 +66,7 @@ world-settings:
     hanging-tick-frequency: 100
     merge-radius:
       item: 2.5
-      exp: 3.0
+      exp: -1
     item-despawn-rate: 6000
     view-distance: default
     simulation-distance: default
