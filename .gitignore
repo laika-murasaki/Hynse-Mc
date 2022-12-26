@@ -67,3 +67,4 @@ Proxy/plugins/punishmanager/locales/zh_TW.yml
 Proxy/plugins/velocityvanish/! CONFIG FILES WILL GENERATE ON SPIGOT SERVERS !
 *.log.gz
 *.gz
+Proxy/plugins/advancedserverlist/cache.data
