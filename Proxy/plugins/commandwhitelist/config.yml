@@ -1,7 +1,7 @@
 
 # Messages use MiniMessage formatting (https://docs.adventure.kyori.net/minimessage/format)
 messages:
-  prefix: 'CommandWhitelist > '
+  prefix: '〘Hynse〙 '
   command_denied: No such command.
   subcommand_denied: You cannot use this subcommand
   no_permission: <red>You don't have permission to do this.
