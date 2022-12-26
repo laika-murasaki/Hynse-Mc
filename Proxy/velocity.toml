@@ -2,21 +2,21 @@
 config-version = "2.5"
 
 # What port should the proxy be bound to? By default, we'll bind to all addresses on port 25577.
-bind = "0.0.0.0:25577"
+bind = "0.0.0.0:2002"
 
 # What should be the MOTD? This gets displayed when the player adds your server to
 # their server list. Legacy color codes and JSON are accepted.
-motd = "&#09add3A Velocity Server"
+motd = "Hynse"
 
 # What should we display for the maximum number of players? (Velocity does not support a cap
 # on the number of players online.)
-show-max-players = 500
+show-max-players = 20
 
 # Should we authenticate players with Mojang? By default, this is on.
 online-mode = true
 
 # Should the proxy enforce the new public key security standard? By default, this is on.
-force-key-authentication = true
+force-key-authentication = false
 
 # If client's ISP/AS sent from this proxy is different from the one from Mojang's
 # authentication server, the player is kicked. This disallows some VPN and proxy
@@ -34,7 +34,7 @@ prevent-client-proxy-connections = false
 #                  unable to implement network level firewalling (on a shared host).
 # - "modern":      Forward player IPs and UUIDs as part of the login process using
 #                  Velocity's native forwarding. Only applicable for Minecraft 1.13 or higher.
-player-info-forwarding-mode = "NONE"
+player-info-forwarding-mode = "modern"
 
 # If you are using modern or BungeeGuard IP forwarding, configure a file that contains a unique secret here.
 # The file is expected to be UTF-8 encoded and not empty.
@@ -45,11 +45,11 @@ forwarding-secret-file = "forwarding.secret"
 # 
 # If your network runs one modpack consistently, consider using ping-passthrough = "mods"
 # instead for a nicer display in the server list.
-announce-forge = false
+announce-forge = true
 
 # If enabled (default is false) and the proxy is in online mode, Velocity will kick
 # any existing player who is online if a duplicate connection attempt is made.
-kick-existing-players = false
+kick-existing-players = true
 
 # Should Velocity pass server list ping requests to a backend server?
 # Available options:
@@ -64,39 +64,28 @@ kick-existing-players = false
 #                  description and mod list.
 # - "all":         Uses the backend server's response as the proxy response. The Velocity
 #                  configuration is used if no servers could be contacted.
-ping-passthrough = "DISABLED"
+ping-passthrough = "mods"
 
 # If not enabled (default is true) player IP addresses will be replaced by <ip address withheld> in logs
-enable-player-address-logging = true
+enable-player-address-logging = false
 
 [servers]
 # Configure your servers here. Each key represents the server's name, and the value
 # represents the IP address of the server to connect to.
-lobby = "127.0.0.1:30066"
-factions = "127.0.0.1:30067"
-minigames = "127.0.0.1:30068"
+survival = "127.0.0.1:30001"
 
 # In what order we should try servers when a player logs in or is kicked from a server.
 try = [
-  "lobby"
+  "survival"
 ]
 
 [forced-hosts]
 # Configure your forced hosts here.
-"lobby.example.com" = [
-  "lobby"
-]
-"factions.example.com" = [
-  "factions"
-]
-"minigames.example.com" = [
-  "minigames"
-]
 
 [advanced]
 # How large a Minecraft packet has to be before we compress it. Setting this to zero will
 # compress all packets, and setting it to -1 will disable compression entirely.
-compression-threshold = 256
+compression-threshold = 512
 
 # How much compression should be done (from 0-9). The default is -1, which uses the
 # default level of 6.
@@ -135,7 +124,7 @@ failover-on-unexpected-server-disconnect = true
 announce-proxy-commands = true
 
 # Enables the logging of commands
-log-command-executions = false
+log-command-executions = true
 
 # Enables logging of player connections when connecting to the proxy, switching servers
 # and disconnecting from the proxy.
