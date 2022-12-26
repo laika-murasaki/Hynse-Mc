@@ -61,12 +61,15 @@ world-settings:
   world:
     view-distance: 8
     simulation-distance: 8
+    mob-spawn-range: 8
   world_nether:
     view-distance: 6
     simulation-distance: 6
+    mob-spawn-range: 6
   world_the_end:
     view-distance: 4
     simulation-distance: 4
+    mob-spawn-range: 4
   default:
     below-zero-generation-in-existing-chunks: true
     arrow-despawn-rate: 1200
