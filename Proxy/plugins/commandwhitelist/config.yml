@@ -13,19 +13,11 @@ messages:
     <gold>%s
   group_doesnt_exist: <red>Group doesn't exist or error occured
 groups:
-  # All groups except from default require commandwhitelist.group.<group_name> permission
-  # commandwhitelist.group.example in this case
-  #  If you wish to leave the list empty, put "commands: []" or "subcommands: []"
   example:
-    # This is the WHITELIST of commands that players will be able to see/use in the group "example"
     commands:
     - example
-    # This is the BLACKLIST of subcommands that players will NOT be able to see/use in the group "example"
     subcommands:
     - example of
-    # This is a custom message that players will see if they do not have commandwhitelist.group.<group_name> permission.
-    # commandwhitelist.group.example in this case
-    # If you don't want to use a custom message, set custom_command_denid_message: ""
     custom_command_denied_message: You don't have commandwhitelist.group.example permission.
   default:
     commands:
