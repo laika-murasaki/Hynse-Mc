@@ -1474,7 +1474,7 @@ world-settings:
           remove-with-weakness: false
         shift-right-click-repairs-mending-points: 0
         exp-pickup-delay-ticks: 2
-        allow-void-trading: false
+        allow-void-trading: true
         netherite-fire-resistance:
           duration: 0
           amplifier: 0
