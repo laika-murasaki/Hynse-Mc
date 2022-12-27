@@ -295,3 +295,7 @@ Instance/Game/plugins/squaremap-deathspot/icon.png
 Instance/Survival/plugins/DiscordSRV/linkedaccounts.json
 Instance/Game/plugins/ReputationPlus/config.yml
 Instance/Game/plugins/LuckPerms/config.yml
+Instance/Game/Project Run/datapacks
+Instance/Game/Project Run/icon.png
+*.bak
+*.nbt
