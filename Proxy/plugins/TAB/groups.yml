@@ -17,8 +17,8 @@ example_group:
 _DEFAULT_:
   tabprefix: "%javascript_check_voice%&r"
   tagprefix: "%javascript_check_voice%&r"
-  customtabname: "%vault_prefix%%essentials_nickname%"
-  customtagname: "%vault_prefix%%essentials_nickname%" # don't forget to enable unlimited nametag mode to make this one work
+  customtabname: "%AFKPlus_Status%%essentials_nickname%"
+  customtagname: "%AFKPlus_Status%%essentials_nickname%" # don't forget to enable unlimited nametag mode to make this one work
   tabsuffix: "%vault-suffix%"
   tagsuffix: "%vault-suffix%"
 
