@@ -1,0 +1,70 @@
+settings:
+  items:
+    beehive-lore:
+      bees: '<reset><gray>Bees: <bees>/<maxbees>'
+      honey: '<reset><gray>Honey level: <honey>/<maxhoney>'
+      enabled: false
+  anvil-crushes-blocks:
+    blocks:
+      cobblestone: sand
+    enabled: false
+  stonecutter-damage-filter:
+    blacklist:
+    - player
+    enabled: false
+  furnace:
+    burn-time:
+      multiplier: 1.0
+      enabled: false
+  gameplay-settings:
+    open-iron-doors-with-hand: false
+    open-iron-trapdoors-with-hand: false
+    respawn-anchor-needs-charges: true
+    cancel-damage-from-pet-owner: false
+    spawner-placement-requires-specific-permission: false
+  lightning-transforms-entities:
+    entities:
+      villager: witch
+      pig: zombie_piglin
+    enabled: false
+  block-building-above-nether:
+    height-limit: 128
+    no-permission-message: '<red>Max build height in this world is: <gold><height>'
+    enabled: false
+  dispenser:
+    break-blocks:
+      pickaxe: false
+      shovel: false
+      hoe: false
+      axe: false
+      shears: false
+    shears-shear-pumpkin: false
+    puts-discs-in-jukebox: false
+    interact-with-cauldron: false
+  chat:
+    send-sleep-percentage-message:
+      player-sleeping: <grey><playername> has fallen asleep. <sleeping> out of <needed>
+        required players in <worldname> are sleeping.
+      skipping-night: <grey>Enough players have slept! Skipping through the night
+        in <worldname>.
+      enabled: false
+    escape-commands: false
+  grindstone:
+    gives-enchants-back: false
+  smithing-table:
+    tools:
+      stone-to-iron: false
+      wood-to-stone: false
+      iron-to-diamond: false
+  rideables:
+    mob-needs-to-be-nametagged-to-ride: false
+  use-notarget-permissions: false
+  shield:
+    damage-reduction: 1.0
+    cooldown: 100
+  dye-boss-bars: false
+  totem:
+    work-on-void-death: false
+  blocks:
+    chorus-flowers-always-drop: false
+    shift-right-click-for-invisible-item-frames: false

@@ -34,7 +34,7 @@ scoreboard-teams:
   invisible-nametags: false
   anti-override: true
   sorting-types:
-  - GROUPS:owner,admin,mod,helper,builder,vip,default
+  - GROUPS:supporter,purpurpass,verify,default
   - PLACEHOLDER_A_TO_Z:%player%
   case-sensitive-sorting: true
   disable-in-worlds:
@@ -59,24 +59,24 @@ scoreboard-teams:
       myCustomLine: 0.66
 yellow-number-in-tablist:
   enabled: true
-  value: '%ping%'
+  value: '%decaliumrep_total%'
   disable-in-worlds:
   - disabledworld
   disable-in-servers:
   - disabledserver
 global-playerlist:
   enabled: true
-  display-others-as-spectators: true
+  display-others-as-spectators: false
   display-vanished-players-as-spectators: true
   isolate-unlisted-servers: false
   update-latency: false
   spy-servers:
   - survival
-  - test
+  - game
   server-groups:
     lobbies:
     - survival
-    - test
+    - game
 belowname-objective:
   enabled: false
   number: '%health%'
@@ -186,10 +186,9 @@ placeholderapi-refresh-intervals:
     '%rel_factionsuuid_relation_color%': 1000
 assign-groups-by-permissions: false
 primary-group-finding-list:
-- Owner
-- Admin
-- Mod
-- Helper
+- supporter
+- purpurpass
+- verify
 - default
 debug: false
 mysql:

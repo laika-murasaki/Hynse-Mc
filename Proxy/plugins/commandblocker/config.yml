@@ -99,7 +99,6 @@ filters:
       - "tabtps"
       - "tm"
       - "tps"
-      - "trigger"
       - "velocity"
       - "virtualtag"
       - "vt"

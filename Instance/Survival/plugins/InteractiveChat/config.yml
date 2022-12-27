@@ -35,8 +35,8 @@ Messages:
 
 Settings:
   # Bungeecord Mode
-  Bungeecord: true
-  UseAccurateSenderParser: true
+  Bungeecord: false
+  UseAccurateSenderParser: false
   TagEveryIdentifiableMessage: false
   # This option is only effective on Minecraft 1.19.1+
   ForceUnsignedChatPackets: true

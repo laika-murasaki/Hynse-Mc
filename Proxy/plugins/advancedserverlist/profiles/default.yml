@@ -36,7 +36,7 @@ motds:
 #
 # Read more: https://github.com/Andre601/AdvancedServerList/wiki/Profiles#favicon
 #
-favicon: 'https://mc-heads.net/avatar/${player name}/64/nohelm.png'
+favicon: 'https://api.creepernation.net/Body/${player name}'
 
 #
 # Contains various options to manipulate the player count (Text displaying online and max players allowed).

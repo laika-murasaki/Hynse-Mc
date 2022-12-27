@@ -29,7 +29,7 @@ expansions:
       high: '&a'
       low: '&c'
       medium: '&e'
-    server_name: A Minecraft Server
+    server_name: '&#fc8b00|'
   player:
     ping_value:
       high: 100
