@@ -1,0 +1,40 @@
+# This is a world configuration file for Paper.
+# This file may start empty but can be filled with settings to override ones in the config/paper-world-defaults.yml
+# 
+# World: Project Run (minecraft:overworld)
+
+_version: 29
+# This is a world configuration file for Paper.
+# This file may start empty but can be filled with settings to override ones in the config/paper-world-defaults.yml
+# 
+# World: world (minecraft:overworld)
+
+_version: 29
+entities:
+  despawn-ranges:
+    ambient:
+      hard: 56
+      soft: 30
+    axolotls:
+      hard: 56
+      soft: 30
+    creature:
+      hard: 56
+      soft: 30
+    misc:
+      hard: 56
+      soft: 30
+    monster:
+      hard: 128
+      soft: 32
+    underground_water_creature:
+      hard: 56
+      soft: 30
+    water_ambient:
+      hard: 56
+      soft: 30
+    water_creature:
+      hard: 56
+      soft: 30
+  spawn-limits:
+    monster: 42

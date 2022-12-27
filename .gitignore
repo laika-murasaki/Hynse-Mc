@@ -299,3 +299,14 @@ Instance/Game/Project Run/datapacks
 Instance/Game/Project Run/icon.png
 *.bak
 *.nbt
+Instance/Game/banned-ips.json
+Instance/Game/banned-players.json
+Instance/Game/commands.yml
+.gitignore
+Instance/Game/help.yml
+Instance/Game/ops.json
+Instance/Game/permissions.yml
+Instance/Game/usercache.json
+Instance/Game/version_history.json
+Instance/Game/whitelist.json
+Instance/Game/plugins/bStats/config.yml
