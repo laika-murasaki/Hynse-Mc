@@ -1,0 +1,5 @@
+message: "ตายที่: %x% %y% %z% in %dimension%" # use %world% for the world name or %dimension% for the dimension name. use § for color codes.
+# the names for each dimension
+NORMAL: "โลก"
+NETHER: "นรก"
+THE_END: "ดิเอ็น"
