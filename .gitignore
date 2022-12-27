@@ -317,3 +317,10 @@ Instance/Game/plugins/InteractiveChatDiscordSrvAddon/server-resource-packs/e43ba
 Instance/Survival/plugins/DiscordSRV/linkedaccounts.json
 Instance/Survival/plugins/JohnsRep/config.yml
 Proxy/plugins/TAB/skincache.yml
+Instance/Game/Custom SkyWars Map
+Instance/Game/world/advancement
+.gitignore
+.gitignore
+.gitignore
+Instance/Game/world/stats
+Instance/Game/world/advancements

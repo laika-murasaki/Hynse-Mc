@@ -161,8 +161,6 @@ placeholder-output-replacements:
     'no': ''
   '%essentials_nickname%':
     '%essentials_nickname%': '%player%'
-  '%afk%':
-    '%afk%': ''
   '%vault-prefix%':
     '%vault-prefix%': ''
   '%vault-suffix%':

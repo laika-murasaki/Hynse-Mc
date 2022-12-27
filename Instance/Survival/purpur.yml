@@ -1446,7 +1446,7 @@ world-settings:
         saturation-regen-amount: 1.0
       player:
         idle-timeout:
-          kick-if-idle: true
+          kick-if-idle: false
           tick-nearby-entities: true
           count-as-sleeping: false
           update-tab-list: false

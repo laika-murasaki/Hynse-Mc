@@ -17,10 +17,10 @@ example_group:
 _DEFAULT_:
   tabprefix: "%javascript_check_voice%&r"
   tagprefix: "%javascript_check_voice%&r"
-  customtabname: "%essentials_nickname%"
-  customtagname: "%essentials_nickname%" # don't forget to enable unlimited nametag mode to make this one work
-  tabsuffix: "%vault-suffix%%afk%"
-  tagsuffix: "%vault-suffix%%afk%"
+  customtabname: "%vault_prefix%%essentials_nickname%"
+  customtagname: "%vault_prefix%%essentials_nickname%" # don't forget to enable unlimited nametag mode to make this one work
+  tabsuffix: "%vault-suffix%"
+  tagsuffix: "%vault-suffix%"
 
 per-world:
   world1:

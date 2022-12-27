@@ -1,0 +1,19 @@
+#The values for AFKPlus_Status
+status:
+  #If the player is AFK
+  true: "True"
+  #If the player isn't afk
+  false: "False"
+#The values for AFKPlus_AFKTime
+afktime:
+  #The number of minutes that the player has been AFK will be placed in front of this
+  #e.g. "1.5 minutes" will be the output for 1 minute and 30 seconds
+  minutes: "minutes"
+  #If the player isn't afk
+  notafk: "Not AFK"
+TotalTimeAFK:
+  #Prints a human readable string of how long the player has been AFK in total
+  #e.g. 1 day 3 hours 23 minutes
+  #This is how many of the largest time units should be printed
+  #e.g. a value of 2 would shorten the above example to 1day 3 hours
+  numberOfTimeUnits: 2
