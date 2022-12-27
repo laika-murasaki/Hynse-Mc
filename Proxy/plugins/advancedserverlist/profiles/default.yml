@@ -36,7 +36,7 @@ motds:
 #
 # Read more: https://github.com/Andre601/AdvancedServerList/wiki/Profiles#favicon
 #
-favicon: 'https://api.creepernation.net/Body/${player name}'
+favicon: 'https://api.creepernation.net/Head/${player name}'
 
 #
 # Contains various options to manipulate the player count (Text displaying online and max players allowed).

@@ -33,21 +33,21 @@ AFKStartSound: ""
 #Set too false to ignore
 EnabledDetections:
   #Sending chat messages
-  Chat: true
+  Chat: false
   #The players head/body rotating in place
-  Look: true
+  Look: false
   #Moving in the x,y,z directions
   Move: true
   #Attacking entities
-  Attack: true
+  Attack: false
   #Running commands
-  Command: true
+  Command: false
   #Right-clicking blocks
-  Interact: true
+  Interact: false
   #Placing blocks
-  BlockPlace: true
+  BlockPlace: false
   #Breaking blocks
-  BlockBreak: true
+  BlockBreak: false
 
 #Movement magnitude means that players need to move or look a certain distance before they will be marked as not AFK
 MovementMagnitude:
