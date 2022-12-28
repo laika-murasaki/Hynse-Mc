@@ -35,7 +35,8 @@ leavce:
 repcheckperm:
   file: repcheckperm.js
 discord_voice_stats:
-  js:
-    file: discord_voice_stats.js
+  file: discord_voice_stats.js
+smallnumgen:
+  file: smallnumgen.js
 example:
   file: example.js
