@@ -324,3 +324,9 @@ Instance/Game/world/advancement
 .gitignore
 Instance/Game/world/stats
 Instance/Game/world/advancements
+Instance/Game/world/datapacks
+*.zip
+*.png
+.gitignore
+Instance/Game/plugins/InteractiveChatDiscordSrvAddon/server-resource-packs
+Instance/Survival/plugins/AFKPlus/statistics.yml

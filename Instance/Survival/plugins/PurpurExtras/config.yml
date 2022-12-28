@@ -3,7 +3,7 @@ settings:
     beehive-lore:
       bees: '<reset><gray>Bees: <bees>/<maxbees>'
       honey: '<reset><gray>Honey level: <honey>/<maxhoney>'
-      enabled: false
+      enabled: true
   anvil-crushes-blocks:
     blocks:
       cobblestone: sand
@@ -64,7 +64,7 @@ settings:
     cooldown: 100
   dye-boss-bars: false
   totem:
-    work-on-void-death: false
+    work-on-void-death: true
   blocks:
     chorus-flowers-always-drop: false
-    shift-right-click-for-invisible-item-frames: false
+    shift-right-click-for-invisible-item-frames: true
