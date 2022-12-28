@@ -33,21 +33,21 @@ AFKStartSound: ""
 #Set too false to ignore
 EnabledDetections:
   #Sending chat messages
-  Chat: false
+  Chat: true
   #The players head/body rotating in place
-  Look: false
+  Look: true
   #Moving in the x,y,z directions
   Move: true
   #Attacking entities
-  Attack: false
+  Attack: true
   #Running commands
-  Command: false
+  Command: true
   #Right-clicking blocks
-  Interact: false
+  Interact: true
   #Placing blocks
-  BlockPlace: false
+  BlockPlace: true
   #Breaking blocks
-  BlockBreak: false
+  BlockBreak: true
 
 #Movement magnitude means that players need to move or look a certain distance before they will be marked as not AFK
 MovementMagnitude:
@@ -78,9 +78,9 @@ Protections:
 #Self = the player whose status has changed
 #Vanish = if the player whose status has changed is vanished
 Broadcast:
-  Console: true
-  OtherPlayers: true
-  Self: true
+  Console: false
+  OtherPlayers: false
+  Self: false
   Vanish: false
 
 #Enabling aggressive AFK detection will tighten tolerances on AFK machines but may slow down the reaction time of

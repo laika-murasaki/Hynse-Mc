@@ -162,7 +162,7 @@ placeholder-output-replacements:
   '%essentials_nickname%':
     '%essentials_nickname%': '%player%'
   '%AFKPlus_Status%':
-    'True': '&7'
+    'True': '&7&m'
     'False': ''
   '%vault-prefix%':
     '%vault-prefix%': ''

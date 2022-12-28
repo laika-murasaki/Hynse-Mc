@@ -77,7 +77,7 @@ game = "127.0.0.1:30005"
 
 # In what order we should try servers when a player logs in or is kicked from a server.
 try = [
-  "survival","game"
+  "survival"
 ]
 
 [forced-hosts]

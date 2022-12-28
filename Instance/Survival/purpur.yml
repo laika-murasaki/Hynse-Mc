@@ -12,8 +12,8 @@ verbose: false
 settings:
   messages:
     cannot-ride-mob: <red>You cannot mount that mob
-    afk-broadcast-away: <yellow><italic>%s is now AFK
-    afk-broadcast-back: <yellow><italic>%s is no longer AFK
+    afk-broadcast-away: <grey><italic>%s is now AFK
+    afk-broadcast-back: <grey><italic>%s is no longer AFK
     afk-tab-list-prefix: '[AFK] '
     afk-tab-list-suffix: ''
     credits-command-output: <green>%s has been shown the end credits
