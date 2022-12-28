@@ -88,20 +88,21 @@ belowname-objective:
 prevent-spectator-effect:
   enabled: false
 bossbar:
-  enabled: false
-  toggle-command: /bossbar
-  remember-toggle-choice: false
+  enabled: true
+  toggle-command: /cd
+  remember-toggle-choice: true
   hidden-by-default: false
   disable-in-worlds:
   - disabledworld
   disable-in-servers:
   - disabledserver
   bars:
-    ServerInfo:
-      style: PROGRESS
-      color: '%animation:barcolors%'
-      progress: '100'
-      text: '&fWebsite: &bwww.domain.com'
+    countdown:
+      style: NOTCHED_10
+      announcement-bar: false
+      color: 'BLUE'
+      progress: '%math_{javascript_countdown2023}/278420*100%'
+      text: '&7เคาท์ดาวน์ปี 2023 ในอีก %javascript_countdown2023format%'
 scoreboard:
   enabled: false
   toggle-command: /sb

@@ -1,121 +1,104 @@
-MyAnimation1:
-  change-interval: 100
+timer:
+  change-interval: 600
   texts:
-  - '&d-&3--------------'
-  - '&3-&d-&3-------------'
-  - '&3--&d-&3------------'
-  - '&3---&d-&3-----------'
-  - '&3----&d-&3----------'
-  - '&3-----&d-&3---------'
-  - '&3------&d-&3--------'
-  - '&3-------&d-&3-------'
-  - '&3--------&d-&3------'
-  - '&3---------&d-&3-----'
-  - '&3----------&d-&3----'
-  - '&3-----------&d-&3---'
-  - '&3------------&d-&3--'
-  - '&3-------------&d-&3-'
-  - '&3--------------&d-'
-  - '&3-------------&d-&3-'
-  - '&3------------&d-&3--'
-  - '&3-----------&d-&3---'
-  - '&3----------&d-&3----'
-  - '&3---------&d-&3-----'
-  - '&3--------&d-&3------'
-  - '&3-------&d-&3-------'
-  - '&3------&d-&3--------'
-  - '&3-----&d-&3---------'
-  - '&3----&d-&3----------'
-  - '&3---&d-&3-----------'
-  - '&3--&d-&3------------'
-  - '&3-&d-&3-------------'
-  - '&d-&3--------------'
-ServerName:
-  change-interval: 300
-  texts:
-  - '&c&lServerName'
-  - '&c&n&lServerName'
-  - '&b&lServerName'
-  - '&b&l&nServerName'
-  - '&e&lServerName'
-  - '&e&n&lServerName'
-web:
-  change-interval: 200
-  texts:
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-  - '&6w&eww.domain.com'
-  - '&ew&6w&ew.domain.com'
-  - '&eww&6w&e.domain.com'
-  - '&ewww&6.&edomain.com'
-  - '&ewww.&6d&eomain.com'
-  - '&ewww.d&6o&emain.com'
-  - '&ewww.do&6m&eain.com'
-  - '&ewww.dom&6a&ein.com'
-  - '&ewww.doma&6i&en.com'
-  - '&ewww.domai&6n&e.com'
-  - '&ewww.domain&6.&ecom'
-  - '&ewww.domain.&6c&eom'
-  - '&ewww.domain.c&6o&em'
-  - '&ewww.domain.co&6m'
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-  - '&ewww.domain.com'
-vote:
-  change-interval: 1000
-  texts:
-  - '&avote.domain.com'
-  - '&a&nvote.domain.com'
-  - '&5vote.domain.com'
-  - '&5&nvote.domain.com'
-Welcome:
-  change-interval: 400
-  texts:
-  - '&7&lW_'
-  - '&7&lW_'
-  - '&7&lWe_'
-  - '&7&lWel_'
-  - '&7&lWelc_'
-  - '&7&lWelco_'
-  - '&7&lWelcom_'
-  - '&7&lWelcome_'
-  - '&7&lWelcome_'
-  - '&7&lWelcome_'
-  - '&7&lWelcome_'
-  - '&7&lWelcom_'
-  - '&7&lWelco_'
-  - '&7&lWelc_'
-  - '&7&lWel_'
-  - '&7&lWe_'
-  - '&7&lW_'
-  - '&7&lW_'
-time:
-  change-interval: 900
-  texts:
-  - '&7Time &b%time%'
-  - '&7> Time &b%time% &7<'
-  - '&7>> Time &b%time% &7<<'
-  - '&7>>> Time &b%time% &7<<<'
-  - '&7Date &b%date%'
-  - '&7> Date &b%date% &7<'
-  - '&7>> Date &b%date% &7<<'
-  - '&7>>> Date &b%date% &7<<<'
-ping-tps:
-  change-interval: 5000
-  texts:
-  - '&aPing: &2&n%ping%&r &ams'
-  - '&bServer TPS: &8%tps%'
-barcolors:
-  change-interval: 1000
-  texts:
-    - RED
-    - BLUE
-    - GREEN
-    - YELLOW
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+    - 49
+    - 50
+    - 51
+    - 52
+    - 53
+    - 54
+    - 55
+    - 56
+    - 57
+    - 58
+    - 59
+    - 60
+    - 61
+    - 62
+    - 63
+    - 64
+    - 65
+    - 66
+    - 67
+    - 68
+    - 69
+    - 70
+    - 71
+    - 72
+    - 73
+    - 74
+    - 75
+    - 76
+    - 77
+    - 78
+    - 79
+    - 80
+    - 81
+    - 82
+    - 83
+    - 84
+    - 85
+    - 86
+    - 87
+    - 88
+    - 89
+    - 90
+    - 91
+    - 92
+    - 93
+    - 94
+    - 95
+    - 96
+    - 97
+    - 98
+    - 99
+    - 100
+

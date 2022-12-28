@@ -38,5 +38,9 @@ discord_voice_stats:
   file: discord_voice_stats.js
 smallnumgen:
   file: smallnumgen.js
+countdown2023:
+  file: countdown2023.js
+countdown2023format:
+  file: countdown2023format.js
 example:
   file: example.js

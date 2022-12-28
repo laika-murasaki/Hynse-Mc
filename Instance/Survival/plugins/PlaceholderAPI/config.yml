@@ -54,3 +54,20 @@ expansions:
       quadrillions: Q
       billions: B
       millions: M
+  math:
+    Rounding: half-up
+    Decimals: 3
+    Debug: false
+  formatter:
+    rounding:
+      precision: 0
+      mode: half-up
+    time:
+      hours: h
+      seconds: s
+      milliseconds: ms
+      days: d
+      condensed: false
+      minutes: m
+    format: '#,###,###.##'
+    locale: en-US
