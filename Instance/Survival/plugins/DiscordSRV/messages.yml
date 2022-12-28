@@ -78,8 +78,8 @@ DiscordToMinecraftMessageReplyFormat: " &7(ตอบ %name%)&r"
 #                  example: Global
 # PlaceholderAPI placeholders are also supported
 #
-MinecraftChatToDiscordMessageFormat: " > %javascript_discord_voice_stats% <%displayname%>```%message%```"
-MinecraftChatToDiscordMessageFormatNoPrimaryGroup: " > %javascript_discord_voice_stats% <%displayname%>```%message%```"
+MinecraftChatToDiscordMessageFormat: "%javascript_discord_voice_stats% **%displayname%**: %message%"
+MinecraftChatToDiscordMessageFormatNoPrimaryGroup: "%javascript_discord_voice_stats% **%displayname%**: %message%"
 
 # Chat channel plugin message
 # This is a special message that's only used when a supported chat channel plugin is hooked
