@@ -1,5 +1,6 @@
 timer:
-  change-interval: 600
+  #change-interval: 600
+  change-interval: 50
   texts:
     - 1
     - 2

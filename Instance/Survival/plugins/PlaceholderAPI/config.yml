@@ -29,7 +29,7 @@ expansions:
       high: '&a'
       low: '&c'
       medium: '&e'
-    server_name: '&#fc8b00|'
+    server_name: '&#7dff66'
   player:
     ping_value:
       high: 100

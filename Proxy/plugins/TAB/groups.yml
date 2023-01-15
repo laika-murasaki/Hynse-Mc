@@ -15,10 +15,10 @@ example_group:
 
  # default settings for all groups, all groups will take properties from this section unless player's primary group overrides a specific setting
 _DEFAULT_:
-  tabprefix: "%javascript_check_voice%&r"
-  tagprefix: "%javascript_check_voice%&r"
-  customtabname: "%AFKPlus_Status%%essentials_nickname%"
-  customtagname: "%AFKPlus_Status%%essentials_nickname%" # don't forget to enable unlimited nametag mode to make this one work
+  tabprefix: ""
+  tagprefix: ""
+  customtabname: "%essentials_nickname%"
+  customtagname: "%essentials_nickname%" # don't forget to enable unlimited nametag mode to make this one work
   tabsuffix: "%vault-suffix%"
   tagsuffix: "%vault-suffix%"
 

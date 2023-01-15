@@ -1,0 +1,5 @@
+enabled: true
+prefix: HYNSE |
+hello-wrapper-left: ''
+hello-wrapper-right: ''
+maximum-message-length: 120

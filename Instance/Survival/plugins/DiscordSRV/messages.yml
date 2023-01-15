@@ -45,10 +45,10 @@
 #
 # NOTE: The %reply% placeholder needs to be present in the format if you want the DiscordToMinecraftMessageReplyFormat to display in your message.
 #
-DiscordToMinecraftChatMessageFormat: "<&#96f5ff%name%%reply%&r> %message%"
-DiscordToMinecraftChatMessageFormatNoRole: "<&#96f5ff%name%%reply%&r> %message%"
+DiscordToMinecraftChatMessageFormat: "[<aqua>Discord</aqua> | %toprolecolor%%toprolealias%<reset>] %name%%reply% » %message%"
+DiscordToMinecraftChatMessageFormatNoRole: "[<aqua>Discord</aqua>] %name%%reply% » %message%"
 DiscordToMinecraftAllRolesSeparator: " | "
-DiscordToMinecraftMessageReplyFormat: " &7(ตอบ %name%)&r"
+DiscordToMinecraftMessageReplyFormat: " (replying to %name%)"
 
 # Minecraft -> Discord message
 #
@@ -78,8 +78,8 @@ DiscordToMinecraftMessageReplyFormat: " &7(ตอบ %name%)&r"
 #                  example: Global
 # PlaceholderAPI placeholders are also supported
 #
-MinecraftChatToDiscordMessageFormat: " > :pchat: **%displayname%**: %message%"
-MinecraftChatToDiscordMessageFormatNoPrimaryGroup: " > :pchat: **%displayname%**: %message%"
+MinecraftChatToDiscordMessageFormat: "**%primarygroup%** %displayname% » %message%"
+MinecraftChatToDiscordMessageFormatNoPrimaryGroup: "%displayname% » %message%"
 
 # Chat channel plugin message
 # This is a special message that's only used when a supported chat channel plugin is hooked
@@ -166,8 +166,8 @@ DiscordChatChannelConsoleCommandNotifyErrorsFormat: "**%user%**, you tried runni
 #   PlaceholderAPI placeholders are also supported
 # DiscordChatChannelListCommandAllPlayersSeparator: the separator used in between players
 #
-DiscordChatChannelListCommandFormatOnlinePlayers: ""
-DiscordChatChannelListCommandFormatNoOnlinePlayers: ""
+DiscordChatChannelListCommandFormatOnlinePlayers: "**Online players (%playercount%):**"
+DiscordChatChannelListCommandFormatNoOnlinePlayers: "**No online players**"
 DiscordChatChannelListCommandPlayerFormat: "%displayname%"
 DiscordChatChannelListCommandAllPlayersSeparator: ", "
 
@@ -193,16 +193,15 @@ DiscordChatChannelListCommandAllPlayersSeparator: ", "
 # Available placeholders for PlayerJoin messages:
 # %message%:        join message as seen in-game
 #
-MinecraftPlayerJoinMessage: 
-  Enabled: false
-  Channel: server-msg
+MinecraftPlayerJoinMessage:
+  Enabled: true
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
     Name: "%botname%"
-  Content: " > :player_join_wobg: %username% เข้าร่วมเซิร์ฟเวอร์"
+  Content: ""
   Embed:
-    Enabled: false
+    Enabled: true
     Color: "#00ff00"
     Author:
       ImageUrl: "%embedavatarurl%"
@@ -223,15 +222,15 @@ MinecraftPlayerJoinMessage:
 # Available placeholders for PlayerFirstJoin messages:
 # %message%:        join message as seen in-game
 #
-MinecraftPlayerFirstJoinMessage: 
-  Enabled: false
+MinecraftPlayerFirstJoinMessage:
+  Enabled: true
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
     Name: "%botname%"
-  Content: " > :new_member: %username% เข้าร่วมเซิร์ฟเวอร์เป็นครั้งแรก"
+  Content: ""
   Embed:
-    Enabled: false
+    Enabled: true
     Color: "#ffd700"
     Author:
       ImageUrl: "%embedavatarurl%"
@@ -252,16 +251,15 @@ MinecraftPlayerFirstJoinMessage:
 # Available placeholders for PlayerLeave messages:
 # %message%:        leave message as seen in-game
 #
-MinecraftPlayerLeaveMessage: 
-  Enabled: false
-  Channel: 1046398617713377412
+MinecraftPlayerLeaveMessage:
+  Enabled: true
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
     Name: "%botname%"
-  Content: "> :player_leave_wobg: %username% ออกจากเซิร์ฟเวอร์"
+  Content: ""
   Embed:
-    Enabled: false
+    Enabled: true
     Color: "#ff0000"
     Author:
       ImageUrl: "%embedavatarurl%"
@@ -283,16 +281,15 @@ MinecraftPlayerLeaveMessage:
 # %deathmessage%: raw death message
 # %world%:        the name of the world the user died in
 #
-MinecraftPlayerDeathMessage: 
-  Enabled: false
-  Channel: 1046398617713377412
+MinecraftPlayerDeathMessage:
+  Enabled: true
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
     Name: "%botname%"
-  Content: " > :player_dead: %username% ตายที่ `%deathcoordinates_world%` ||`X(%deathcoordinates_coord_x%)` `Y(%deathcoordinates_coord_y%)` `Z(%deathcoordinates_coord_z%)`||"
+  Content: ""
   Embed:
-    Enabled: false
+    Enabled: true
     Color: "#000000"
     Author:
       ImageUrl: "%embedavatarurl%"
@@ -314,16 +311,15 @@ MinecraftPlayerDeathMessage:
 # %achievement%: title of the achievement/advancement
 # %world%:       the name of the world the user is in
 #
-MinecraftPlayerAchievementMessage: 
-  Enabled: false
-  Channel: 1046398617713377412
+MinecraftPlayerAchievementMessage:
+  Enabled: true
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
     Name: "%botname%"
-  Content: " > :player_goal: %username% ได้ทำความก้าวหน้า ```​​%achievement%```"
+  Content: ""
   Embed:
-    Enabled: false
+    Enabled: true
     Color: "#ffd700"
     Author:
       ImageUrl: "%embedavatarurl%"
@@ -367,11 +363,11 @@ MinecraftPlayerAchievementMessage:
 # %tps%:           average TPS of the server
 # PlaceholderAPI placeholders are also supported
 #
-ChannelTopicUpdaterChatChannelTopicFormat: ""
-ChannelTopicUpdaterConsoleChannelTopicFormat: ""
+ChannelTopicUpdaterChatChannelTopicFormat: "%playercount%/%playermax% players online | %totalplayers% unique players ever joined | Server online for %uptimemins% minutes | Last update: %date%"
+ChannelTopicUpdaterConsoleChannelTopicFormat: "TPS: %tps% | Mem: %usedmemorygb%GB used/%freememorygb%GB free/%maxmemorygb%GB max | %serverversion%"
 # AtServerShutdownFormats ONLY supports %totalplayers%, %serverversion%, & %date% / %time%
-ChannelTopicUpdaterChatChannelTopicAtServerShutdownFormat: ""
-ChannelTopicUpdaterConsoleChannelTopicAtServerShutdownFormat: ""
+ChannelTopicUpdaterChatChannelTopicAtServerShutdownFormat: "Server is offline | %totalplayers% unique players ever joined"
+ChannelTopicUpdaterConsoleChannelTopicAtServerShutdownFormat: "Server is offline | %serverversion%"
 
 # Discord command message
 # This is the message sent to players when they run "/discord". It's recommended to leave command syntax as a part of this
@@ -389,8 +385,8 @@ UnknownCommandMessage: "&bThat command doesn't exist!"
 # DiscordChatChannelServerStartupMessage: message to be sent when server starts; leave blank to disable
 # DiscordChatChannelServerShutdownMessage: message to be sent when server shuts down; leave blank to disable
 #
-DiscordChatChannelServerStartupMessage: ""
-DiscordChatChannelServerShutdownMessage: ""
+DiscordChatChannelServerStartupMessage: ":white_check_mark: **Server has started**"
+DiscordChatChannelServerShutdownMessage: ":octagonal_sign: **Server has stopped**"
 
 # Server watchdog message
 #
@@ -405,7 +401,7 @@ DiscordChatChannelServerShutdownMessage: ""
 #                        you can use ServerWatchdogTimeout as a placeholder by using %timeout%
 #                        you can use the %timestamp% placeholder for use in discord's timestamp format
 #
-ServerWatchdogMessage: ""
+ServerWatchdogMessage: "<t:%timestamp%:R> %guildowner%, the server hasn't ticked in %timeout% seconds :fire::bangbang:"
 
 # Account link messages
 # These are messages used when accounts are linked
@@ -430,19 +426,19 @@ ServerWatchdogMessage: ""
 # MinecraftNobodyFound:         %target%:       the input that led to no results being found
 #
 # Discord
-CodeGenerated: "รหัสยืนยัน : %code%"
-UnknownCode: " > <:player_wrong:1053552146647363645> ไม่เจอรหัส"
-InvalidCode: " > <:player_wrong:1053552146647363645> แน่ใจไหมว่าเป็นตัวเลข 4 หลัก **ไปอ่าน https://hynse.ga/join/ ใหม่**"
-DiscordAccountLinked: " > <:player_verify:1053551608543334410> สำเสร็จแล้ว ```%name% (%uuid%)```"
-DiscordAccountAlreadyLinked: " > <:player_wrong:1053552146647363645> ยืนยันไปแล้ว ```%username% (%uuid%)```"
+CodeGenerated: "Your link code is %code%. PM the bot on Discord (%botname%) containing just this code as the message to link your accounts."
+UnknownCode: "I don't know of such a code, try again."
+InvalidCode: "Are you sure that's your code? Link codes are 4 numbers long."
+DiscordAccountLinked: "Your Discord account has been linked to %name% (%uuid%)"
+DiscordAccountAlreadyLinked: "You are already linked to %username% (%uuid%)"
 DiscordLinkedAccountRequired: "You attempted to say the following message to the game chat but this server requires that you have your Minecraft account linked to your Discord account. Link it in-game by typing `/discord link`. \n```%message%```"
-DiscordLinkedAccountCheckFailed: " > <:player_wrong:1053552146647363645> ไม่สามารถยืนยันได้ลองอีกครั้ง"
+DiscordLinkedAccountCheckFailed: "Unable to check if your account is linked, please try again later"
 # Minecraft
-ClickToCopyCode: "คลิกเพื่อคัดลอก"
-MinecraftAccountLinked: "&bยืนยันแล้ว %username% (%id%)"
-MinecraftAccountAlreadyLinked: "&bคุณยืนยันไปแล้ว"
-LinkedCommandSuccess: "&bยืนยันกับ %name% แล้ว"
-UnlinkCommandSuccess: "&bไม่ได้ยืนยันกับ %name% แล้ว"
-MinecraftNoLinkedAccount: "&cไม่เจอบัญชี"
-LinkingError: "&cเกิดข้อผิดพลาดติดต่อทีมงาน support"
-MinecraftNobodyFound: "&cไม่เจอuuidหรือusernameของ \"%target%\""
+ClickToCopyCode: "Click to copy"
+MinecraftAccountLinked: "&bYour UUID has been linked to Discord user %username% (%id%)"
+MinecraftAccountAlreadyLinked: "&bYour Minecraft account is already associated with a Discord account. Should you have permission to, you can unlink your account with /discord unlink."
+LinkedCommandSuccess: "&bYour Minecraft account is associated with %name%."
+UnlinkCommandSuccess: "&bYour Minecraft account is no longer associated with %name%."
+MinecraftNoLinkedAccount: "&cYour Minecraft account isn't associated with a Discord account."
+LinkingError: "&cCurrently unable to link accounts due to an internal error. Contact your server administration team."
+MinecraftNobodyFound: "&cNobody found with Discord ID/Discord name/Minecraft name/Minecraft UUID matching \"%target%\" to look up."

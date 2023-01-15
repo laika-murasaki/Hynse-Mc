@@ -1,0 +1,33 @@
+ # ------------------------------------------------------------------------------------- #
+ # You can use MiniMessage format for ALL messages in this plugin                        #
+ # RGB colors:           <#00ff00>R G B!                                                 #
+ # Decorations:          <underlined>, <bold>, <italic>, <strikethrough>, <obfuscated>   #
+ # Reset formatting tag: <reset>                                                         #
+ # Clickable messages:   <click:run_command:/say hello>Click</click> to say hello        #
+ # Hoverable messages:   <hover:show_text:'<red>test'>TEST                               #
+ # Rainbow messages:     <yellow>Woo: <rainbow>|||||</rainbow>!                          #
+ # Gradient messages:    <yellow>Woo: <gradient>||||</gradient>!                         #
+ # Multiline messages:   its first line<newline> its second line!                        #
+ #                                                                                       #
+ # You can found more info about MiniMessage format in                                   #
+ # https://docs.adventure.kyori.net/minimessage/format.html#standard-tags                #
+ # ------------------------------------------------------------------------------------- #
+ # There you can change messages for plugin.
+Messages:
+  prefix: 'HYNSE | '
+  plus-symbol: '<green>+'
+  reputation-format: '<gray><name> <white>[<value><white>] <white>[<gray><comment> <white>]'
+  command-used-wrong: '<prefix> <red>You write command wrongly'
+  minus-symbol: '<red>-'
+  reputation-self: '<prefix> <red>You can`t give self a reputation'
+  command-right-using: '<prefix> <red>Right usage: /rep [Nickname] [+/-] [Comment]'
+  player-not-found: '<prefix> <red>player <name> is never playing on server before'
+  reputation-of-player: '<gray>--- <white>reputation of <name>: <gray>---'
+  need-more-played-time: '<prefix> <red>You have not enough time played on server to use this command'
+  reputation-total-format: '<white>Total:<white> <value>'
+  command-no-permission: '<prefix> <red>You have not permissions for what'
+  command-successfully-reputation: '<prefix> <green>You have successfully add reputation to <name>'
+  reputation-total-format-minus: '<white>Total:<red> <value>'
+  player-receive-reputation: '<prefix> <white>player <yellow><name> <white>give you reputation!'
+  reputation-total-format-plus: '<white>Total:<green> <value>'
+

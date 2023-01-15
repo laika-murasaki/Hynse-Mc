@@ -4,7 +4,7 @@
 #
 # Read more: https://github.com/Andre601/AdvancedServerList/wiki/Profiles#priority
 #
-priority: 0
+priority: 99
 
 #
 # Set conditions that needs to be met.
@@ -24,10 +24,9 @@ priority: 0
 # Read more: https://github.com/Andre601/AdvancedServerList/wiki/Profiles#motds
 #
 motds:
-  - |-
-    <#ffcd29>★ <gradient:#d984e8:#ffb5f3><bold>ʜʏɴꜱᴇ</bold> </gradient><#e8e8e8>〉〉</#e8e8e8>  <#ffcfeb>community survival multiplayer</#ffcfeb>
-    <gradient:#e0e0e0:#a8a8a8><font:uniform>NO HACKING / NO TOXIC / NO OPERATOR / NO GRIEFER / DONT BE JERK</font></gradient>
-#
+  - |- 
+    <#fbcae3>▄<#f5bedf>█<#f0b2da>▄<#eaa6d6>▄<#e59ad1>█<#df8ecd>▄<#d982c8>█<#d476c4>▄<#ce6abf>█  <#de73ce>ᴘʟᴀʏ.<#ff91ef><bold>HYNSE</bold><#de73ce>.xʏᴢ  <#ce6abf>█<#d476c4>▄<#d982c8>█<#df8ecd>▄<#e59ad1>█<#eaa6d6>▄<#f0b2da>▄<#f5bedf>█<#fbcae3>▄
+    <#ffbaef>ᴠᴀɴɪʟʟᴀ ꜱᴍᴘ ꜱᴇᴍɪ ᴘᴜʙʟɪᴄ <#ebebeb>● <#ffbaef>ᴡᴡᴡ.ʜʏɴsᴇ.xʏᴢ/ᴅɪsᴄᴏʀᴅ
 # Allows you to set a favicon for this server list profile.
 # You can use one of three possible options:
 #   1. A file name matching a PNG file located in the 'favicons' folder (Needs to end with .png)
@@ -36,7 +35,7 @@ motds:
 #
 # Read more: https://github.com/Andre601/AdvancedServerList/wiki/Profiles#favicon
 #
-favicon: 'https://api.creepernation.net/Head/${player name}'
+favicon: 'logo.png'
 
 #
 # Contains various options to manipulate the player count (Text displaying online and max players allowed).
@@ -60,7 +59,7 @@ playerCount:
   # Read more: https://github.com/Andre601/AdvancedServerList/wiki/Profiles#hover
   #
   hover:
-    - ''
+    - '<aqua>https://hynse.xyz'
   #
   # Modifies the text that usually displays '<online>/<max>'
   # 
@@ -88,7 +87,7 @@ playerCount:
     #
     # Read more: https://github.com/Andre601/AdvancedServerList/wiki/Profiles#enabled
     #
-    enabled: false
+    enabled: true
     #
     # Sets how much should be added/subtracted from the current number of online players
     # to then use for the max player count.
@@ -101,4 +100,4 @@ playerCount:
     #
     # Read more: https://github.com/Andre601/AdvancedServerList/wiki/Profiles#amount
     #
-    amount: 0
+    amount: 1

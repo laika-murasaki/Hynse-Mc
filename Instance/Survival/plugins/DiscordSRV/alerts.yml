@@ -46,7 +46,6 @@
 #   #jda - DiscordSRV's JDA instance that it uses to communicate with Discord
 #
 # Syntax/defaults:
-
 #  - Trigger: <event name or /command>
 #    Async: true # optional, defaults to true, you should almost never have to change this
 #    Conditions:
@@ -77,12 +76,7 @@
 #        IconUrl: ""
 #      Timestamp: false # set to true to use the time the message was sent or use a epoch timestamp for a specific time (https://www.epochconverter.com/)
 #
-Alerts: 
-  #- Trigger: TimeSkipEvent
-    #Channel: global
-    #Conditions:
-      #- '#event.getSkipReason().toString() == "NIGHT_SKIP"'
-    #Content: " > :night_skip: ข้ามกลางคืนแล้ว"
+Alerts:
   # Example config to send messages to the "fish" DiscordSRV channel when a player successfully catches a fish
   #- Trigger: PlayerFishEvent
   #  Channel: fish
@@ -126,27 +120,3 @@ Alerts:
   #    Author:
   #      ImageUrl: "{embedavatarurl}"
   #      Name: "* {username} ${#allArgs}"
-
-
-  - Trigger: PlayerLoginEvent
-    Async: true
-    Channel: server
-    IgnoreCancelled: true
-    Content: " > :pjg: **{username}** join ```Survival```"
-  - Trigger: PlayerQuitEvent
-    Async: true
-    Channel: server
-    IgnoreCancelled: true
-    Content: " > :plg: **{username}** quit ```Survival```"
-  - Trigger: PlayerAFKEvent
-    Channel: server
-    Content: ' > :pafk: **{username}** is ${#event.isGoingAfk() ? "now" : "no longer"} AFK'
-  - Trigger: TimeSkipEvent
-    Async: true
-    Channel: server
-    Conditions:
-    - '#event.getSkipReason().toString() == "NIGHT_SKIP"'
-    Content: " > :sun: **Skip the night**"
-  - Trigger: PlayerAdvancementDoneEvent
-    Channel: server
-    Content: " > :avmd: **{username}** has made an advancement `${new net.md_5.bungee.api.chat.TranslatableComponent(#event.getAdvancement().getDisplay().title().key()).toPlainText()}` ```${new net.md_5.bungee.api.chat.TranslatableComponent(#event.getAdvancement().getDisplay().description().key()).toPlainText()}```"

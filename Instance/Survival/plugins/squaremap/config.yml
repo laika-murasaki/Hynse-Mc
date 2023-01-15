@@ -1,12 +1,12 @@
 config-version: 2
 settings:
     web-directory:
-        path: D:/Hynse/html/mapgame/backend/survival
+        path: D:/Hynse/public/xyz/maps/backend/survival
         auto-update: false
     language-file: lang-th.yml
     debug-mode: false
     update-checker: true
-    web-address: https://hynse.ga/mapgame
+    web-address: https://hynse.xyz/maps
     ui:
         coordinates:
             enabled: true
@@ -79,15 +79,15 @@ world-settings:
             enabled: true
             update-interval-seconds: 1
             show-controls: false
-            default-hidden: true
+            default-hidden: false
             layer-priority: 2
             z-index: 2
             nameplate:
                 enabled: true
-                show-head: true
+                show-head: false
                 heads-url: https://api.creepernation.net/head/{uuid}
-                show-armor: true
-                show-health: true
+                show-armor: false
+                show-health: false
             hide:
                 invisible: true
                 spectators: true

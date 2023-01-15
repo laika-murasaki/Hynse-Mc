@@ -1,6 +1,6 @@
 @echo off
 :RESTART
-SET serverjar=velocity-3.1.2-SNAPSHOT-201
+SET serverjar=velocity-3.2.0-SNAPSHOT-220
 SET jdk=%LIGHT_JDK_18%/bin/java.exe
 SET mem=2048
 

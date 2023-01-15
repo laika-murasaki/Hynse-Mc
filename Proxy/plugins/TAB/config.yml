@@ -59,24 +59,21 @@ scoreboard-teams:
       myCustomLine: 0.66
 yellow-number-in-tablist:
   enabled: true
-  value: '%decaliumrep_total%'
+  value: '%johnsrep_total%'
   disable-in-worlds:
   - disabledworld
   disable-in-servers:
   - disabledserver
 global-playerlist:
   enabled: true
-  display-others-as-spectators: false
+  display-others-as-spectators: true
   display-vanished-players-as-spectators: true
   isolate-unlisted-servers: false
   update-latency: false
   spy-servers:
   - survival
   - game
-  server-groups:
-    lobbies:
-    - survival
-    - game
+  - creative
 belowname-objective:
   enabled: false
   number: '%health%'
@@ -97,12 +94,18 @@ bossbar:
   disable-in-servers:
   - disabledserver
   bars:
-    countdown:
-      style: NOTCHED_10
-      announcement-bar: false
-      color: 'BLUE'
-      progress: '%math_{javascript_countdown2023}/278420*100%'
-      text: '&7เคาท์ดาวน์ปี 2023 ในอีก %javascript_countdown2023format%'
+    restart:
+      style: NOTCHED_20
+      announcement-bar: true
+      color: 'RED'
+      progress: '%animation:timer%'
+      text: '&4&l! ! !  &#ff696eServer Restart  &4&l! ! !'
+    #countdown:
+      #style: NOTCHED_10
+      #announcement-bar: false
+      #color: 'BLUE'
+      #progress: '%math_{javascript_countdown2023}/60*100%'
+      #text: '&7เคาท์ดาวน์ปี 2023 ในอีก %javascript_countdown2023format%'
 scoreboard:
   enabled: false
   toggle-command: /sb

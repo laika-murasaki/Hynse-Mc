@@ -13,7 +13,7 @@
 #                             example: 4988
 # PlaceholderAPI placeholders are supported for the values
 #
-NicknameSynchronizationEnabled: true
+NicknameSynchronizationEnabled: false
 NicknameSynchronizationCycleTime: 3
 NicknameSynchronizationFormat: "%displayname%"
 
@@ -33,14 +33,14 @@ NicknameSynchronizationFormat: "%displayname%"
 # GroupRoleSynchronizationCycleTime: amount of minutes between repeatedly triggering synchronization for all online players
 # GroupRoleSynchronizationCycleCompletely: whether synchronizations running on a timer should synchronize every member in the bots Discord servers
 #
-GroupRoleSynchronizationGroupsAndRolesToSync: {"verify":"1051667996021633045","supporter": "1037270388549365770","purpurpass": "1055130504195739728"}
-GroupRoleSynchronizationMinecraftIsAuthoritative: false
-GroupRoleSynchronizationOneWay: true
+GroupRoleSynchronizationGroupsAndRolesToSync: {"trusted": "000000000000000000", "vip": "000000000000000000"}
+GroupRoleSynchronizationMinecraftIsAuthoritative: true
+GroupRoleSynchronizationOneWay: false
 GroupRoleSynchronizationEnableDenyPermission: false
 GroupRoleSynchronizationPrimaryGroupOnly: false
 GroupRoleSynchronizationOnLink: true
 GroupRoleSynchronizationCycleTime: 5
-GroupRoleSynchronizationCycleCompletely: true
+GroupRoleSynchronizationCycleCompletely: false
 
 # Ban synchronization
 # When a player gets banned on the server when they have a linked Discord account you can optionally ban them on the Discord server and vice versa
@@ -49,6 +49,6 @@ GroupRoleSynchronizationCycleCompletely: true
 # BanSynchronizationDiscordToMinecraftReason: the message to be used as the ban reason for banning players from the Minecraft server
 # BanSynchronizationMinecraftToDiscord: whether to ban people on the Discord server if they get banned from the Minecraft server
 #
-BanSynchronizationDiscordToMinecraft: true
+BanSynchronizationDiscordToMinecraft: false
 BanSynchronizationDiscordToMinecraftReason: "&cYou have been banned until further notice from the server because you were banned on our Discord server."
-BanSynchronizationMinecraftToDiscord: true
+BanSynchronizationMinecraftToDiscord: false
